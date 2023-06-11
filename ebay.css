@@ -49,16 +49,33 @@
     /* border-radius: 50%; */
   }
 
-  span{
+  /* span{
     position: relative;
     top:-38px;
-  }
+  } */
 
-  .shopy{
+  /* .shopy{
     color: black;
     position: relative;
     top:-130px;
-    margin-right: 290px;
+    /* margin-right: 580px; */
+    /* margin-right: 400px; */ 
 
 
+  
+
+  .div-icon{
+    display: flex;
+    border: 2px;
+    border: 1px solid black;
+    padding: 2px;
+    width: 300px;
+  }
+
+  .search-box{
+    border: none;
+    width: 300px;
+    /* top:-500px; */
+    border-color: white;
+   
   }
