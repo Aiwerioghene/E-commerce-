@@ -1,5 +1,5 @@
 .navbar {
-    height: 2.3rem;
+    height: 2.0rem;
     background-color: transparent;
     align-items: center;
 }
@@ -7,13 +7,16 @@
 
   .hi{
     display: flex; 
-    margin-top:1.3rem ;
+    margin-top:1.4rem ;
     font-size: small;
+    /* padding: 0; */
   }
 
   .nav-link{
   font-size: small;
   margin-top:0.9rem ;
+  color: blue;
+  /* padding: 0%; */
   }
 
   .linki{
@@ -46,36 +49,94 @@
   .iconscontainer .icons .bi{
     cursor: pointer;
     font-size: 20px;
-    /* border-radius: 50%; */
+    
   }
 
-  /* span{
-    position: relative;
-    top:-38px;
-  } */
+    .shopp{
+        color: black;
+        position: relative; 
+        top: 0px;
+        font-size:15px;
+        font-weight: 300;
+        padding-left: 25x;
+        /* padding-right: 5px; */
+      
+    }
 
-  /* .shopy{
-    color: black;
-    position: relative;
-    top:-130px;
-    /* margin-right: 580px; */
-    /* margin-right: 400px; */ 
+    /* the icon kini */
+    .input-group-text{
+        border-radius: 0; 
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+        border-right: none;
+        background-color: white;
+    }
 
+    /* the search for anything */
+    .search-input {
+        max-width: 700px;
+        border-radius: 0;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: none;
+        font-size:15px;
+        font-weight: 450;
+         height:45px;
+    }
 
-  
+    /* all catergory */
+    .btn-basic{
+        background-color: rgb(255, 255, 255);
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        border-radius: 0;
+        font-size:12px;
+        font-weight: 400;
+        width: 150px;
+       height:45px;
+       
+    }
+ /* search button */
+     .btn-primary {
+        border-radius: 0;
+        border: none;
+        width: 220px;
+        height: 45px;
+        font-size: 15px;
+        font-weight: 300;
+        padding-right: 10px;
+        padding-left: 20px;
+        margin-right: 35px;
+    }
 
-  .div-icon{
-    display: flex;
-    border: 2px;
-    border: 1px solid black;
-    padding: 2px;
-    width: 300px;
+    /* third nav link */
+    .third{
+        color: #3e3e3e;
+        font-weight: 500;
+    }
+
+    .top-left-caption {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
+
+.custom-outline-primary {
+    color: brown;
+    border-color: brown;
+    border-radius: 0%;
+    width: 150px;
+    height: 3rem;
+  }
+  .custom-outlinee{
+    color: rgb(199, 19, 19);
+    border-color: rgb(199, 19, 19);
+    border-radius: 0%;
+    width: 170px;
+    height: 3rem;
+
   }
 
-  .search-box{
-    border: none;
-    width: 300px;
-    /* top:-500px; */
-    border-color: white;
-   
-  }
