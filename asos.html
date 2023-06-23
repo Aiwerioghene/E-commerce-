@@ -1,0 +1,342 @@
+<!-- default page -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <title>Netflix clone</title>
+  </head>
+  <body>
+    <style>
+     .navbar{
+      height: 2rem;
+      
+     }
+
+     .navbar-nav{
+      align-items: flex-start;
+      
+     
+     }
+
+     .nav-link{
+      color: #6c757d;
+      border-left:  0.8px solid   #6c757d;
+      height: 2rem;
+      font-size: small;
+      
+     }
+
+     .btn-basic{
+      background-color: transparent;
+       border: 1px solid black; 
+       border-radius: 0;
+       width: 465px;
+       height: 50px;
+       text-align: left;
+       
+     }
+
+     .search-container 
+     {
+       position: relative;
+       width: 800px;
+       height: 45px;
+       border-right: none;
+       padding-left: 2rem;
+      
+      }
+
+      .search-input 
+      {
+        width: 100%;
+        height: 100%;
+        padding-right: 30px; /* Adjust this value to make space for the search icon */
+        border-radius: 10rem;
+        
+       }
+
+ .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust this value to position the search icon */
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.iconscontainer
+  {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: 2px;
+
+  }
+
+  .iconscontainer .icons
+  {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1.5rem
+  }
+
+  .iconscontainer .icons .bi{
+    cursor: pointer;
+    font-size: 20px;
+    
+  }
+  .icon {
+  margin-left: 10px; /* Adjust the spacing between icons */
+}
+
+
+.icons {
+  display: flex;
+  flex-direction: row-reverse; /* Reverse the order of icons */
+}
+
+  .navbar-brand{
+    letter-spacing: -0.2rem;
+    color: white;
+    font-size: 35px;
+    padding-right: 0.5rem;
+    font-family: "Your Font Name", Arial, sans-serif;
+    font-weight: 520;
+  
+  }
+
+   .gender{
+    color: white;
+    font-size:15px;
+    height: 4rem; 
+    display: flex; 
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 0 20px;
+    margin-left: auto; 
+  
+    
+   
+  }
+
+
+
+    </style>
+   
+
+   <nav class="navbar navbar-expand-sm bg-light"  >
+    
+    <!-- Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <!-- to align items at the top of the nabar -->
+    <ul class="navbar-nav ">
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="padding-left: 1rem; padding-right: 1rem;">Market Place</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="padding-left: 1rem; padding-right: 1rem;">Help & FAQs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="padding-left: 1rem; padding-right: 1rem; border-right:0.8px solid   #6c757d ; display: flex; align-items: center;">
+          <img src="nigeri-flag.jpeg" alt="Nigerian Flag" class=" rounded-circle "  data-toggle="modal" data-target="#myModal"style="height: 20px; width: 20px;">
+        </a>
+         <!-- The Modal -->
+    <div class="modal fade" id="myModal" style="color:  #5a5a5a; font-weight: 700; letter-spacing: 2px; font-size: 15px; padding:auto;">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        
+        <div class="modal-header">
+          <h6 class="modal-title" style="font-weight: 700; letter-spacing: 2px;">PREFERENCES</h6>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         SHOP IN:
+         <br>
+        <br>
+          <select class=" btn-basic" id="sel1" name="sellist1"> 
+            <option>Nigeria</option>
+            <option>Argentina</option>
+            <option>Australia</option>
+            <option>Austria</option>
+            <option>Bahamas</option>
+            <option>Bahrain</option>
+            <option>Bangladesh</option>
+            <option>Barbados</option>
+            <option>Belgium</option>
+            <option>Belize</option>
+            <option>Bolivia</option>
+            <option>Brazil</option>
+            <option>Canada</option>
+            <option>Chile</option>
+            <option>China</option>
+            <option>Colombia</option>
+            <option>Costa Rica</option>
+            <option>Croatia</option>
+            <option>Cuba</option>
+            <option>Cyprus</option>
+            <option>Czech Republic</option>
+            <option>Denmark</option>
+            <option>Dominica</option>
+            <option>Dominican Republic</option>
+            <option>Ecuador</option>
+            <option>Egypt</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>Greece</option>
+            <option>Grenada</option>
+            <option>Haiti</option>
+            <option>Honduras</option>
+            <option>Hungary</option>
+            <option>Iceland</option>
+            <option>India</option>
+            <option>Indonesia</option>
+            <option>Ireland</option>
+            <option>Israel</option>
+            <option>Italy</option>
+            <option>Jamaica</option>
+            <option>Japan</option>
+            <option>Jordan</option>
+            <option>Malaysia</option>
+            <option>Mexico</option>
+            <option>Netherlands</option>
+            <option>New Zealand</option>
+            <option>Nicaragua</option>
+            <option>Norway</option>
+            <option>Oman</option>
+            <option>Panama</option>
+            <option>Paraguay</option>
+            <option>Peru</option>
+            <option>Philippines</option>
+            <option>Poland</option>
+            <option>Portugal</option>
+            <option>Qatar</option>
+            <option>Romania</option>
+            <option>Russia</option>
+            <option>Saudi Arabia</option>
+            <option>Singapore</option>
+            <option>South Africa</option>
+            <option>South Korea</option>
+            <option>Spain</option>
+            <option>Sri Lanka</option>
+            <option>Sweden</option>
+            <option>Switzerland</option>
+            <option>Taiwan</option>
+            <option>Thailand</option>
+            <option>Turkey</option>
+            <option>Ukraine</option>
+            <option>United Arab Emirates</option>
+            <option>United Kingdom</option>
+            <option>United States</option>
+            <option>Uruguay</option>
+            <option>Venezuela</option>
+            <option>Vietnam</option>
+            <option>Yemen</option>
+            <option>Zimbabwe</option> 
+          </select>
+         
+          <div class="container-fluid" style="padding: 0;">
+            <div style="background-color: #f2f2f2; height: 50px; display: flex; align-items: center;">
+              <img src="Visa-Logo.png" width="40px" height="30px" style="padding: 5px;">
+              <img src="MasterCard.png" width="40px" height="30px" style="padding: 5px;">
+              <img src="PayPal-Logo.png" width="40px" height="30px" style="padding: 5px;">
+              <img src="American_Express_logo.png" width="40px" height="30px" style="padding: 5px;">
+            </div>
+          </div>
+          
+          
+          <br>
+         CURRENCY:
+          <br>
+         <br>
+           <select class=" btn-basic" id="sel1" name="sellist1"> 
+             <option>$ USD</option>
+             <option>E GBP</option>
+           </select>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark btn-block" style=" height:50px; border-radius: 0; font-weight: 700; letter-spacing: 2px;">UPDATE PREFERENCES</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="padding-left: 1rem; padding-right: 1rem; border: none;"></a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <!-- nav bar twoooo -->
+  <nav class="navbar navbar-expand-md navbar-light bg-dark" style="height: 4rem; ">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: white;">asos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav" style="display: flex; align-items: center; ">
+        <li class="nav-item">
+          <a class="nav-link gender" href="#" style="color: white;">WOMEN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link gender" href="#" style=" color: white; border-right:1px solid #5a5a5a;">MEN</a>
+        </li>
+
+
+        <!-- SEARCHHH -->
+        <div class="search-container" >
+          <input type="text" class="search-input" placeholder="Search for items and brands">
+          <button class="search-icon">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+
+        <li class="nav-item">
+          <div class="iconscontainer ">
+            <div  class="icons ml-auto">
+              <div class="icon"><i class="bi bi-person"></i></div>
+              <div class="icon"> <i class="bi bi-heart"></i></div>
+              <div class="icon"><i class="bi bi-bag"></i></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  
+    
+
+    
+
+  </body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</html>
