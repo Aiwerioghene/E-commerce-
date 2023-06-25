@@ -19,36 +19,35 @@
   </head>
   <body>
     <style>
-     .navbar{
+      /* nav bar 1 */
+     .navbare{
       height: 2rem;
       
      }
 
-     .navbar-nav{
+     .navbar-nav
+     {
       align-items: flex-start;
-      
-     
      }
 
      .nav-link{
       color: #6c757d;
       border-left:  0.8px solid   #6c757d;
       height: 2rem;
-      font-size: small;
-      
-      
+      font-size: small;  
      }
-
+      
+/* the button inside that modal */
      .btn-basic{
       background-color: transparent;
        border: 1px solid black; 
        border-radius: 0;
        width: 465px;
        height: 50px;
-       text-align: left;
-       
+       text-align: left;  
      }
 
+     /* search icon css */
      .search-container 
      {
        position: relative;
@@ -66,8 +65,10 @@
         padding-right: 30px; /* Adjust this value to make space for the search icon */
         border-radius: 10rem;
         border: none;
-        font-weight: 300;
-        letter-spacing: -0.09rem;
+        font-weight: 280;
+        letter-spacing: -0.4px;
+        font-family: Arial, Helvetica, sans-serif;
+       
         
        }
 
@@ -81,6 +82,7 @@
   cursor: pointer;
 }
 
+/* those icons at the top */
 .iconscontainer {
   display: flex;
   justify-content: flex-end;
@@ -137,6 +139,7 @@
 }
 
 
+/* nav 2 */
   .navbar-brand{
     letter-spacing: -0.2rem;
     color: white;
@@ -147,7 +150,8 @@
   
   }
 
-   .gender{
+  /* the gray women and men  css */
+   .gender {
     color: white;
     font-size:15px;
     height: 4rem; 
@@ -165,7 +169,7 @@
    
   }
 
-  
+  /* the sale futrher blah blah text */
 .main-text {
   display: inline-block;
   font-size: 13px;
@@ -174,6 +178,7 @@
   text-align: center;
 }
 
+/* the women and men button css */
 .btn-outline-dark{
  height: 30px;
  font-weight: 700;
@@ -187,17 +192,6 @@
  
 }
 
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  padding: 200px;
-}
-
-.navbar-brand:hover .dropdown-content {
-  display: block;
-}
 .image-overlay {
   position: absolute;
   top: 50%;
@@ -223,12 +217,8 @@
   margin: 0 10px;
 }
 
-.ending{
-  border-left: none;
-  border-right:none ;
-}
-
-.iconscontainer {
+/* the social media buttons */
+.iconscontainerr {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,51 +230,128 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    /* background-color: #f1f1f1; */
-    top:-10px
+    top:-10px;
   }
 
-  .icon a {
+  .iconsss img{
+   
+ width:40px;
+  height:30px;
+  padding: 5px;
+  }
+
+  .iconn a {
     display: inline-block;
     text-decoration: none;
     color: inherit;
   }
   
-  .icon {
+  .iconn {
     margin-right: 40px;
    
   }
 
-  .icon i {
+  .iconn i {
     font-size: 30px;
    
   }
 
+  /* footer */
+  .bottom  .text-muted{
+    font-size:12px;
+  }
+
+  /* ending footer */
+.ending{
+  background-color:#cfcfcf;
+   width: 100%;
+}
+
+.ending p{
+  font-size: x-small;
+  letter-spacing: 1px;
+  font-weight: 300;
+   display: inline;
+}
+
+.ending a{
+  font-size: x-small; 
+  letter-spacing: 1px;
+  font-weight: 300; 
+  border-right: 1px solid  #6c757d;
+  padding-right: 5px; 
+  position: relative;
+  right: -45rem;
+}
 
 @media (max-width: 576px) {
   .remove {
     display: none;
    
   }
+  
 
   .bigimg{
-  width: 600px;
-  height:600px ;
+    width: 100%;
+    max-width: 100%;
+     height: 500px;
   }
 
   .row{
     display: none;
   }
 
+  .navbare{
+    display: none;
+  }
+
+  .ending a{
+    position: relative;
+   right: 0rem;
+  
+  }
+
+  .ending{
+    position: relative;
+    top:-2.9rem;
+    width: 100%;
+    padding-left: 0;
+  
+  }
+
+  .bottom {
+    display: none;
+  }
+
+  .iconsss{
+    display: none;
+  }
+
+  
+
 }
 
+@media (max-width: 80px) {
+
+  .remove{
+    display: flex;
+     align-items: center;
+  }
+
+  .btn-outline-dark{
+    display: flex;
+     align-items: center;
+     position: relative;
+     top:-22rem;
+  }
+}
 
 
 
     </style>
    
 
-   <nav class="navbar navbar-expand-sm bg-light"  >
+   <nav class="navbar navbar-expand-sm bg-light navbare"  >
     
     <!-- Links -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -544,28 +611,44 @@
 
  
 
-      <div class="icon">
-        <div class="iconscontainer">
+      <div class="iconn">
+        <div class="iconscontainerr">
           <div class="iconsss">
-            <div class="icon"><a href="https://www.facebook.com/ASOS/"><i class="bi bi-facebook" ></i></a></div>
-            <div class="icon"><a href="https://www.instagram.com/asos/?hl=en"><i class="bi bi-instagram"></i></a></div>
-            <div class="icon"><a href="https://www.snapchat.com"><i class="bi bi-snapchat"></i></a></div>
+            <!-- facebookicon -->
+            <div class="iconn">
+              <a href="https://www.facebook.com/ASOS/">
+                <i class="bi bi-facebook" ></i>
+              </a>
+            </div>
+
+            <!-- instagram icon -->
+            <div class="iconn">
+              <a href="https://www.instagram.com/asos/?hl=en">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+
+            <!-- snapchat icon -->
+            <div class="iconn">
+              <a href="https://www.snapchat.com">
+                <i class="bi bi-snapchat"></i>
+              </a>
+            </div>
          
-       
-      <img src="Visa-Logo.png" width="40px" height="30px" style="padding: 5px; border-left: 1px solid  #5a5a5a;;">
-      
-              <img src="MasterCard.png" width="40px" height="30px" style="padding: 5px;">
-              <img src="PayPal-Logo.png" width="40px" height="30px" style="padding: 5px;">
-              <img src="American_Express_logo.png" width="40px" height="30px" style="padding: 5px;">
-    </div>
-  </div>
+             <img src="Visa-Logo.png">
+              <img src="MasterCard.png">
+              <img src="PayPal-Logo.png">
+              <img src="American_Express_logo.png">
+        </div>
+      </div>
 
 
   <br>
   <br>
-  <footer style="background-color: #eeeeee;">
+
+  <!-- the footer -->
+  <footer class ="bottom"style="background-color: #eeeeee;">
     <br>
-
     <div class="container">
         <div class="row">
             <div class="col-3">
@@ -573,10 +656,10 @@
              <h6 class="text-muted" style="font-weight: 800;">
               HELP & INFORMATION
              </h6>
-             <a class="text-muted" style="font-size:12px;"href="#">Help</a><br>
-             <a class="text-muted" style="font-size: 12px;"href="#">Track order</a><br>
-             <a class="text-muted" style="font-size: 12px;"href="#">Delivery & returns</a>
-             <a class="text-muted" style="font-size: 12px;"href="#">Sitemap</a>   
+             <a class="text-muted"href="#">Help</a><br>
+             <a class="text-muted"href="#">Track order</a><br>
+             <a class="text-muted"href="#">Delivery & returns</a>
+             <a class="text-muted"href="#">Sitemap</a>   
         </header>
     </div>
             <div class="col-3">
@@ -584,10 +667,10 @@
                     <h6 class="text-muted" style="font-weight: 800;">
                      ABOUT ASOS
                     </h6>
-                    <a class="text-muted" style="font-size:12px;"href="#">About us</a><br>
-                    <a class="text-muted" style="font-size: 12px;"href="#">Careers at ASOS</a><br>
-                    <a class="text-muted" style="font-size: 12px;"href="#">Corporate responsibilities</a><br>
-                    <a class="text-muted" style="font-size: 12px;"href="#">Investor's site</a> <br>
+                    <a class="text-muted"href="#">About us</a><br>
+                    <a class="text-muted"href="#">Careers at ASOS</a><br>
+                    <a class="text-muted"href="#">Corporate responsibilities</a><br>
+                    <a class="text-muted"href="#">Investor's site</a> <br>
             </div>
 
             <div class="col-3">
@@ -595,11 +678,11 @@
                     <h6 class="text-muted" style="font-weight: 800;">
                      MORE FROM ASOS
                     </h6>
-                    <a class="text-muted" style="font-size:12px;"href="#">Mobile and ASOS apps</a><br>
-                    <a class="text-muted" style="font-size:12px;"href="#">ASOS Marketpiece</a><br>
-                    <a class="text-muted" style="font-size: 12px;"href="#">Gift Vouchers</a><br>
-                    <a class="text-muted" style="font-size: 12px;"href="#">Black Friday</a><br>
-                    <a class="text-muted" style="font-size: 12px;"href="#">ASOS x Thrift+</a> <br>
+                    <a class="text-muted"href="#">Mobile and ASOS apps</a><br>
+                    <a class="text-muted"href="#">ASOS Marketpiece</a><br>
+                    <a class="text-muted"href="#">Gift Vouchers</a><br>
+                    <a class="text-muted"href="#">Black Friday</a><br>
+                    <a class="text-muted"href="#">ASOS x Thrift+</a> <br>
                     <div>
                        
                </header>
@@ -610,11 +693,25 @@
                     <h6 class="text-muted" style="font-weight: 800;">
                      SHOPPING FROM:
                     </h6>
-                    <a class="text-muted" style="font-size: 12px;"href="#">You're in</a><img src="nigeri-flag.jpeg" alt="Nigerian Flag" class=" rounded-circle "style="height: 20px; width: 20px;">
-                    |CHANGE
-                    
+                    <a class="text-muted"href="#">You're in &nbsp;&nbsp;</a><img src="nigeri-flag.jpeg" alt="Nigerian Flag" class=" rounded-circle "style="height: 20px; width: 20px;"> <span> <p class="text-muted" style="font-size: 12px; display: inline;" > |CHANGE</p></span>      
                </header>
             </div>
+        </div>
+    </div>
+  </footer>
+    
+         <footer class="ending">
+              <!-- <div class="container"> -->
+                <p class="text-muted"> &copy; 2023 ASOS </p>
+                <a href="#" class="text-muted">
+                  Privacy & Cookie</a>
+                  <a href="#" class="text-muted" >Ts&Cs 
+                    <a href="#" class="text-muted"style="padding-left: 5px;">Accessibility
+                
+                </a></p>
+              <!-- </div> -->
+            </footer>
+
   </body>
 
     <!-- Optional JavaScript -->
